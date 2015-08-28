@@ -9,6 +9,7 @@ class TodoApp extends Component {
   render() {
     const { todos, dispatch } = this.props;
     const actions = bindActionCreators(TodoActions, dispatch);
+    ///// dispatch 到底是什麼？感覺用 redux 架構，好像都不用管，他直接就包好了，但不太懂是怎麼接起來的
 
     return (
       <div>
@@ -27,7 +28,9 @@ TodoApp.propTypes = {
 function select(state) {
   return {
     todos: state.todos
+    //todos: state.a
   };
 }
 
 export default connect(select)(TodoApp);
+//connect 是什麼
