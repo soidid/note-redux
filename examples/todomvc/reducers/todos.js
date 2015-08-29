@@ -6,6 +6,8 @@ const initialState = [{
   id: 0
 }];
 
+// 這邊用了 ES6 設定 default 值的 syntax
+// 如果 state === undefined，就會把 state 設定為 initialState
 export default function todos(state = initialState, action) {
   switch (action.type) {
   case ADD_TODO:

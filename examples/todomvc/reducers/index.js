@@ -5,6 +5,8 @@ import todos from './todos';
 const rootReducer = combineReducers({
   todos
 });
+console.log("******");
+console.log(rootReducer);
 export default rootReducer;
 
 // const rootReducer = combineReducers({
